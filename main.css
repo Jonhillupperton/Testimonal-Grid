@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+main {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+section {
+    max-width:20.43rem;
+    border-radius: 0.5rem;    
+}
+
+.user {
+    display: grid;
+    grid-template-columns: min-content 55%;
+    max-width: fit-content;
+    margin: 1.68rem 0 0 2rem;
+}
+
+strong {
+    font-size: 0.812rem;
+    line-height: 1;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.user p {
+    font-size: 0.687rem;
+    font-weight: 600;
+    padding:0 0 0 1rem;
+}
+
+img {
+    width: 1.75rem;
+    height: 1.75rem;
+    
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 0.875rem;
+    padding: 1.12rem 2rem 0rem 2rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 0.812rem;
+    line-height: 1.38;
+    padding: 1rem 2rem 1.875rem 2rem;
+    color: #CFCFCF;
+    opacity: 0.7;
+}
+
+.daniel {
+    background-color: #733FC8;
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 12.4rem;
+}
+
+.jonathan {
+    background-color: #48556A;
+}
+
+.jeanette {
+    background-color: #FFFFFF;
+    color: #48556A;
+}
+
+.jeanette strong {
+    color: #48556A;
+}
+
+.patrick {
+    background-color: #19202D;
+}
+
+.kira {
+    background-color: #FFFFFF;
+    color: #48556A;
+}
+
+.kira strong {
+    color: #48556A;
+}
+
+footer {
+   max-width:20.43rem;
+}
+
+@media screen and (min-width: 770px) {
+    main {
+        max-width:69.375rem;
+        display: grid;
+        gap: 1.875rem;
+        grid-template-columns:repeat(4 , 1fr);
+    }
+
+    section {
+        max-width: max-content;
+    }
+
+    .daniel {
+        grid-column: span 2;
+        background-position-x: 22.3rem;
+    }
+
+    .jeanette {
+        grid-column-start: 1;
+    }
+
+    .patrick {
+        grid-column-start: 3;
+        grid-column:span 2;
+    }
+
+    .kira {
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        grid-column-start:4;
+    }
+}
