@@ -32,10 +32,9 @@ section {
     margin: 1.68rem 0 0 2rem;
 }
 
-strong {
-    font-size: 0.812rem;
+.user strong {
+    font-size: 0.8125rem;
     line-height: 1;
-    list-style: none;
     color: #FFFFFF;
 }
 
@@ -47,13 +46,11 @@ strong {
 
 img {
     width: 1.75rem;
-    height: 1.75rem;
-    
+    display: block;
     border-radius: 50%;
 }
 
-h2 {
-    font-size: 0.875rem;
+h1 {
     padding: 1.12rem 2rem 0rem 2rem;
     font-weight: 600;
     font-size: 1.25rem;
@@ -124,16 +121,19 @@ footer {
 
     .jeanette {
         grid-column-start: 1;
+        box-shadow: 25px 25px 50px 10px rgba(25, 33, 46, 0.1);
     }
 
     .patrick {
         grid-column-start: 3;
         grid-column:span 2;
+        box-shadow: 25px 25px 50px 10px rgba(25, 33, 46, 0.1);
     }
 
     .kira {
         grid-row-start: 1;
         grid-row-end: span 2;
         grid-column-start:4;
+        box-shadow: 25px 25px 50px 10px rgba(25, 33, 46, 0.1);
     }
 }
